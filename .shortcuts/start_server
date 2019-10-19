@@ -1,5 +1,11 @@
 #!/data/data/com.termux/files/usr/bin/env bash
+set -euo pipefail
 
+echo "### Current IP confguration"
+ip address show dev wlan0
+
+echo "### Starting server on port 8080"
+echo "Press Ctrl+C to quit"
 exec /data/data/com.termux/files/home/bin/gziphttp \
 	--serve-dir /storage/emulated/0/public \
 	--listen :8080
