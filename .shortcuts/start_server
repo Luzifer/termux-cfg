@@ -1,0 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/env bash
+
+exec /data/data/com.termux/files/home/bin/gziphttp \
+	--serve-dir /storage/emulated/0/public \
+	--listen :8080

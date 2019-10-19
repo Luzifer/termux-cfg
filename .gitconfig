@@ -1,0 +1,45 @@
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  df = diff
+  lg = "log --color --graph --pretty=format:'%Cred%h%Creset [%G?]%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  ri = rebase --interactive --autosquash
+  st = status
+
+[branch]
+  autosetuprebase = always
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[commit]
+  gpgsign = false
+
+[core]
+  bare = false
+  excludesfile = ~/.gitignore_global
+  filemode = true
+  logallrefupdates = true
+  pager = less -F -X
+  repositoryformatversion = 0
+  warnAmbiguousRefs = false
+
+[diff]
+  renames = true
+
+[push]
+  default = upstream
+  gpgSign = if-asked
+
+[receive]
+  denyNonFastForwards = true
+
+[rerere]
+  enabled = true
+
+[user]
+  email = knut@ahlers.me
+  name = Knut Ahlers
