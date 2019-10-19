@@ -6,6 +6,7 @@
   lg = "log --color --graph --pretty=format:'%Cred%h%Creset [%G?]%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
   ri = rebase --interactive --autosquash
   st = status
+  c = "commit -v"
 
 [branch]
   autosetuprebase = always
